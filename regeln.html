@@ -18,9 +18,89 @@
             <div class="content">
                 <section class="box">
                     <h1>Regeln</h1>
+                    <h3>Inhalt:</h3>
                     <div class="underbox">
-                        <h2>1.</h2>
-                        <p2>Erstens</p2>
+                        <ul>
+                            <li><a href="#klassisches-sudoku">Klassisches Sudoku</a></li>
+                            <li><a href="#killer-sudoku">Killer-Sudoku</a></li>
+                            <li><a href="#x-sudoku">X-Sudoku</a></li>
+                            <li><a href="#hyper-sudoku">Hyper-Sudoku</a></li>
+                            <li><a href="#fudschijama">Fudschijama</a></li>
+                            <li><a href="#multi-sudoku">Multi-Sudoku</a></li>
+                            <li><a href="#nonomino-sudoku">Nonomino-Sudoku</a></li>
+                            <li><a href="#roxdoku">Roxdoku</a></li>
+                            <li><a href="#even-odd-sudoku">Even-Odd-Sudoku</a></li>
+                            <li><a href="#vergleichssudoku">Vergleichssudoku</a></li>
+                            <li><a href="#buchstaben-silben-und-wörter-sudoku">Buchstaben-, Silben- und Wörter-Sudoku</a></li>
+                            <li><a href="#rechen-sudoku">Rechen-Sudoku</a></li>
+                            <li><a href="#farben-sudoku">Farben-Sudoku</a></li>
+                            <li><a href="#rechtschreib-sudoku">Rechtschreib-Sudoku</a></li>
+                        </ul>
+                    </div>
+                    <div class="underbox" id="klassisches-sudoku">
+                        <h2>Klassisches Sudoku</h2>
+                        <p>Das Standard-Sudoku besteht aus einem Gitterfeld mit 3×3 Blöcken, die jeweils in 3×3 Felder unterteilt sind, insgesamt 81 Felder in 9 Zeilen und 9 Spalten. In einige dieser Felder sind schon zu Beginn Ziffern zwischen 1 und 9 eingetragen („Vorgaben“).</p>
+                        <p>Die Aufgabe besteht darin, die leeren Felder des Rätsels so zu füllen, dass in jeder der je neun Zeilen, Spalten und Blöcke jede Ziffer von 1 bis 9 nur einmal auftritt.</p>
+                        <p>Die drei Bereiche (Zeile, Spalte, Block) sind gleichrangige „Einheiten“ oder Gruppen.</p>
+                        <p>Während des Lösungsprozesses stehen in jedem Feld noch mehrere den Regeln konforme Lösungsziffern als „Kandidaten“ imaginär zur Verfügung, die man notieren kann und die man schrittweise eliminiert.</p>
+                        <p>Da jede Lösungszahl immer drei Einheiten (Zeile, Spalte, Block) zugleich angehört, bewirkt sie in diesen direkte Ausschlüsse („Sperren“). Solche Sperren entstehen zusätzlich durch logische Schlüsse aus besonderen Anordnungen von Kandidaten (siehe unter Lösungsmethoden/globale Paarsuche).</p>
+                        <p>Obwohl Sudokus in der Regel mit Ziffern arbeiten, sind zur Lösung keinerlei Rechenkenntnisse erforderlich; man könnte ebenso neun andere abstrakte Symbole verwenden – Ziffern ermöglichen durch ihre feste und bekannte Reihenfolge jedoch ein leichteres Überprüfen der fehlenden Elemente innerhalb einer Einheit.</p>
+                    </div>
+                    <div class="underbox" id="killer-sudoku">
+                        <h2>Killer-Sudoku</h2>
+                        <p>Eine Variante des Sudoku ist das Killer-Sudoku. Die meist 81 Felder sind in kleine Bereiche gruppiert, welche jeweils mit einer kleinen Zahl versehen sind. Diese gibt die Summe aller Zahlen in diesem Bereich an. Killer-Sudoku trainiert neben dem logischen Denkvermögen somit auch das Kopfrechnen.</p>
+                    </div>
+                    <div class="underbox" id="x-sudoku">
+                        <h2>X-Sudoku</h2>
+                        <p>X-Sudoku (auch Diagonal- oder Magisches Sudoku) ist eine Variante, bei der (zusätzlich zu den Bedingungen des normalen Sudokus) auf jeder der beiden Hauptdiagonalen, die gemeinsam ein „X“ ergeben, jede Zahl nur einmal vorkommen darf. Sudoku- und andere Rätsel-Zeitschriften veröffentlichen regelmäßig X-Sudokus in verschiedenen Größen. Neben der Standardgröße 9×9 kommen auch andere Größen vor, etwa 8×8 (mit 2×4-Blöcken). Bei letzterem verfügen die beiden Diagonalen über kein gemeinsames Schnittfeld. Für X-Sudokus in der Standardgröße 9×9 ist die Bestimmung der Mindestanzahl vorbelegter Felder nicht gelöst. Man kennt eindeutig lösbare X-Sudokus mit 12 Vorbelegungen, doch es ist nicht bekannt, ob es auch welche mit 11 Vorbelegungen gibt.</p>
+                    </div>
+                    <div class="underbox" id="hyper-sudoku">
+                        <h2>Hyper-Sudoku</h2>
+                        <p>Eine weitere Variante ist das Hyper-Sudoku (auch „Fenstersudoku“). Ähnlich wie das X-Sudoku unterscheidet sich auch dieses vom normalen Sudoku durch zusätzliche Einheiten, in denen jede Zahl genau einmal vorkommen darf. Ein Hyper-Sudoku hat vier zusätzliche Blöcke, die mit einem Feld Abstand zum Rand und zueinander über den neun Blöcken des normalen Sudokus liegen. Dadurch ändert sich der Lösungsansatz etwas, da man verstärkt auf die Blöcke und weniger auf die Zeilen und Spalten achten muss.</p>
+                    </div>
+                    <div class="underbox" id="fudschijama">
+                        <h2>Fudschijama</h2>
+                        <p>Inzwischen gibt es auch Sudokus – meist als Fudschijama bezeichnet – mit 4×4 Blöcken und somit 256 (= 16×16) Feldern, in die je 16 verschiedene Zahlen, Buchstaben oder Symbole verteilt werden sowie „erweiterte Sudokus“ mit 4×3 Blöcken und 144 (also jeweils 12×12) Feldern und „Mini-Sudokus“ für Einsteiger mit 2×3 Blöcken und 36 (also 6×6) Feldern. Auch andere Blockgrößen, wie z. B. 5×5 (625 Felder) oder gar 6×6 (1296 Felder) sind denkbar, die gelegentlich auch Jumbo-Sudoku heißen. Für Kinder gibt es 4×4-Sudokus (auch Mini-Sudoku genannt) mit einer Zweier-Kantenlänge pro Block, dabei werden also nur 4 Ziffern oder Bildsymbole eingetragen.</p>
+                        <p>Allgemein kann ein Sudoku aus a×b Blöcken bestehen, die jeweils b×a Felder enthalten. Das Sudoku enthält insgesamt (a×b)×(a×b) Felder, in die a×b verschiedene Symbole einzutragen sind.</p>
+                    </div>
+                    <div class="underbox" id="multi-sudoku">
+                        <h2>Multi-Sudoku</h2>
+                        <p>Ein Multi-Sudoku besteht aus mehreren Sudokus, die sich in Teilbereichen überlappen. Charakteristisch hierfür ist, dass die dazugehörigen Sudokus jeweils für sich allein genommen nicht eindeutig lösbar sind, sondern erst die Kombination die Lösung eindeutig macht.</p>
+                        <p>Ein Beispiel hierfür ist das „Samurai Sudoku“ oder „Gattai 5“, das Anfang 2006 aufkam. Fünf Standard-Sudokus sind teilweise überlappend X-förmig angeordnet – eines zentral und an jeder Ecke ein weiteres. Dabei teilt sich jedes dieser vier Eck-Sudokus genau einen der vier äußeren Eckblöcke des Zentral-Sudokus, dadurch ergeben sich insgesamt 369 Felder verteilt auf 41 Blöcke. Weitere Variationen setzen acht (Gattai 8), dreizehn (Gattai 13) oder mehr Sudokus zusammen. Diese Varianten werden als Monster-Samurai bezeichnet.</p>
+                    </div>
+                    <div class="underbox" id="nonomino-sudoku">
+                        <h2>Nonomino-sudoku</h2>
+                        <p>Bei dieser Variante (auch bekannt als „Freiform-Sudoku“ oder „Chaos-Sudoku“) sind die Blöcke des Sudokus unregelmäßig geformt, bestehen aber nach wie vor aus neun Feldern (englisch Jigsaw Sudoku oder Nonomino Sudoku), sogenannten Nonominos. Ein Beispiel hierfür sind Sudokus mit treppenförmiger Begrenzung der Blöcke (englisch Stairstep Sudoku).</p>
+                        <p>Als Erweiterung dieser Variante kann man „Torus-Sudoku“ verstehen. Hierbei setzen sich die unregelmäßigen Blöcke über den Rand des Sudokus hinaus auf die gegenüberliegende Seite fort. Der Name rührt daher, dass die Blöcke zusammenhängend werden, wenn man das Quadrat aufrollt und zu einem Torus zusammenklebt.</p>
+                    </div>
+                    <div class="underbox" id="roxdoku">
+                        <h2>Roxdoku</h2>
+                        <p>Eine weitere Variante ist dreidimensional und besteht in der Grundform aus 3×3×3 Würfeln als Felder. Hier darf nicht nur in Zeilen und Spalten, sondern auch in den Ebenen keine Zahl beziehungsweise Buchstabe doppelt sein. Außerdem ist es auch hier möglich, so wie in der 2D-Version mit 4×4×4 Würfeln oder gar noch mehr zu spielen. Roxdokus werden als Computerspiel angeboten, da hier die Möglichkeit besteht, das gesamte „Spielfeld“ in alle Richtungen zu drehen.</p>
+                    </div>
+                    <div class="underbox" id="even-odd-sudoku">
+                        <h2>Even-Odd-Sudoku</h2>
+                        <p>Bei einem Even-Odd-Sudoku ist für einzelne Felder vorgegeben, dass in diese nur gerade (englisch even) oder nur ungerade (englisch odd) Zahlen eingetragen werden dürfen.</p>
+                    </div>
+                    <div class="underbox" id="vergleichssudoku">
+                        <h2>Vergleichssudoku</h2>
+                        <p>Ein Vergleichssudoku (englisch Comparison Sudoku) erschien in Österreich erstmals am 2. August 2006 in der Tageszeitung Der Standard unter LeichtSinn. In einem Vergleichssudoku werden keine Zahlen vorgegeben. Stattdessen sind die Grenzlinien aller Einzelfelder eines jeden Blocks mit einer Ein- beziehungsweise Ausbuchtung zu jedem Nachbarfeld versehen – im Sinne von < (kleiner als) oder > (größer als). Alle üblichen Sudokuregeln gelten auch hier, nur müssen bei dieser Variante alle Zahlen zusätzlich der Kleiner- beziehungsweise Größerregel folgen. Der französische Mathematiker Jean-Paul Delahaye beschreibt diese Sudoku-Variante in Les ancêtres français du sudoku (als Quelle wird die Zeitschrift Puzzler von 1999 genannt).</p>
+                        <p>Ähnlich mit der Anordnung der Zahlen operiert ein „Skyline-Sudoku“. Hierbei werden die einzutragenden Zahlen als Hochhäuser der entsprechenden Höhe interpretiert. Zur Vorgabe gehören Zahlen am Rand einer Zeile oder Spalte; diese geben an, wie viele Häuser man beim Blick in die Reihe sieht, wenn man sich vorstellt, dass kleinere Häuser (also Zahlen) von davorstehenden größeren verdeckt werden.</p>
+                    </div>
+                    <div class="underbox" id="buchstaben-silben-und-wörter-sudoku">
+                        <h2>Buchstaben-, Silben- und Wörter-Sudoku</h2>
+                        <p>Buchstaben-, Silben- und Wörter-Sudokus werden zum Lesen- und Schreibenlernen in der Grundschule eingesetzt. Durch das wiederholende Lesen und Schreiben der Buchstaben, Silben oder Wörter prägen sich die Schüler Laute, Lautgruppen, Buchstaben, Silben und Wörter ein.</p>
+                    </div>
+                    <div class="underbox" id="rechen-sudoku">
+                        <h2>Rechen-Sudoku</h2>>
+                        <p>Rechen-Sudokus werden zum Rechnenlernen in der Grundschule eingesetzt. Erst durch das Ausrechnen der Plus-, Minus-, Mal- und Teilaufgaben in den Kästchen der 4×4-, 6×6- und 9×9-Sudokus erhält man die jeweiligen Sudoku-Startzahlen. Die so errechneten Sudoku-Startzahlen trägt man nach den üblichen Sudoku-Regeln in die leeren Kästchen des Sudoku-Feldes ein.</p>
+                    </div>
+                    <div class="underbox" id="farben-sudoku">
+                        <h2>Farben-Sudoku</h2>
+                        <p>Bei Farben-Sudokus dürfen zusätzlich zu den bestehenden Regeln in allen Feldern gleicher Farbe keine Zahlen doppelt vorkommen.</p>
+                    </div>
+                    <div class="underbox" id="rechtschreib-sudoku">
+                        <h2>Rechtschreib-Sudoku</h2>
+                        <p>Rechtschreib-Sudokus werden zum Lernen der wichtigsten Rechtschreibregeln in der Grundschule eingesetzt. Durch das wiederholende Schreiben der Wörter mit einer Rechtschreibbesonderheit (zum Beispiel doppelter Konsonant, Auslautverhärtung, ß, ä-e/äu-eu, Dehnungs-h und so weiter) in die 4×4-, 6×6- und 9×9-Felder prägen sich die Schüler die Wörter mit den jeweiligen Rechtschreibbesonderheiten ein. Um die Sudokus richtig zu lösen, müssen die Kinder einen „merk“-würdigen Start-Satz immer wieder lesen, leise vorsprechen und nach den typischen Sudoku-Regeln in die Kästchen schreiben (Dehnungs-h-Startsatz eines 4×4-Sudokus: „Ihrer Uhr fehlen Zahlen.“).</p>
                     </div>
                 </section>
             </div>

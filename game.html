@@ -45,7 +45,7 @@
                 if i % 27 == 26:
                     if not i == 80:
                         sys.stdout.write("\n" + ("-" * 21) + "\n")
-                            continue
+                        continue
 
                 if i % 9 == 8:
                     sys.stdout.write("\n")
@@ -95,12 +95,12 @@
                         sel = 0
 
                     else:
-                    sys.stdout.write("\033[K" + Colors.brightRed + 'Please select a number from 1 to 9' + Colors.reset + '\n')
+                        sys.stdout.write("\033[K" + Colors.brightRed + 'Please select a number from 1 to 9' + Colors.reset + '\n')
                 else:
-                sys.stdout.write("\033[K" + Colors.brightRed + 'No position selected' + Colors.reset + '\n')
+                    sys.stdout.write("\033[K" + Colors.brightRed + 'No position selected' + Colors.reset + '\n')
 
             else:
-            sys.stdout.write("\033[K" + Colors.brightRed + 'Command unknown' + Colors.reset + '\n')
+                sys.stdout.write("\033[K" + Colors.brightRed + 'Command unknown' + Colors.reset + '\n')
 
     </py-script>
 </body>
